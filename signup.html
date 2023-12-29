@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="box">
+        <form>
+            <div>
+                <h1>Register</h1>
+                <div class="input">
+                    <label>UserName</label><br/>
+                    <input type="text" id="UserName" name="name" pattern="^[a-zA-Z0-9]{7,}" title="username contains only letters and numbers"required/><br/>
+                </div>
+                <div class="input">
+                    <label>Number</label><br/>
+                    <input type="text" id="number" name="number" pattern="^\d{10}$" 
+                    title="type only numbers of length 10" required/><br/>
+                </div>
+                <div class="input">
+                    <label>Email</label><br/>
+                    <input type="Email" id="email" name="email" required/><br/>
+                </div>
+                <div class="input">
+                    <label>Password</label><br/>
+                    <input type="text" id="Password" name="password"  
+                            pattern="(?=.*d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                            title="password must contain one uppercase,one lowercase and one number atleast 8 characters" required/><br/>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                  <button class="log">Register</button>
+                 
+                </div>
+              </div>
+            <div class="signUp">
+                <p>Already have an account?<a href="#">Login</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
